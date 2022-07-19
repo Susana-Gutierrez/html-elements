@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drag and drop</title>
+
+    <script>
+      function allowDrop(event) {
+        event.preventDefault();
+      }
+      function drop(event) {
+        console.log('event: ', event);
+      }
+    </script>
+
+  </head>
+  <body>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid #aaaaaa; width: 105px; height: 70px;"></div>
+    <br>
+    <img id="drag1" src="images/logo.jpg" draggable="true" width="100" height="69">
+  </body>
+</html>
